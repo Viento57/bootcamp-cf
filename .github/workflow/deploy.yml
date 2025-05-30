@@ -1,15 +1,15 @@
-name: "Deploy to Production"
+name: 'Deploy to Production'
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
 jobs:
   deploy-codigofacil:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v4
-      run: echo "Deploying to Codigofacil..."
-      run: echo "Correr migraciones"
-      run: echo "Generar binario"
-      run: echo "Publicar en Codigofacil"
+      - uses: actions/checkout@v4
+      - run: echo "Deploying to Codigofacil..."
+      - run: echo "Correr migraciones"
+      - run: echo "Generar binario"
+      - run: echo "Publicar en Codigofacil"
